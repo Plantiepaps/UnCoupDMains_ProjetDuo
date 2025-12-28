@@ -1,0 +1,20 @@
+a {
+    text-decoration: none;
+    color: #2f2f2f;
+}
+
+#container-firstnavbar{
+    display: flex;
+    justify-content: space-around;
+}
+
+#container-firstnavbar h1 {
+    flex: 1;
+}
+
+.firstnavbar {
+    flex: 2;
+    display: flex;
+    justify-content: space-around;
+}
+
