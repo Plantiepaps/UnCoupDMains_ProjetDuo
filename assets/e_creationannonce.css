@@ -1,20 +1,245 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+h1 {
+    font-size: 4rem;
+    font-weight: bolder;
+    color: #2f2f2f;
+}
+
+h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #2f2f2f;
+}
+
+h3 {
+    font-size: 1.25rem;
+    color: #2f2f2f;
+}
+
+p {
+    font-size: 1rem;
+}
+
+body {
+    background-color: #FAFAFA;
+}
+
+/* La premiere nav  */
+
+.firstNav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: solid #2f2f2f;
+  padding: 0 4%;
+}
+
+/* Le formulaire de recherche  */
+
+/* La barre de recherche complète  */
+.searchWrapper {
+  position: relative;
+  width: 300px;
+}
+
+.searchWrapper input {
+  width: 100%;
+  padding: 3% 3%;
+  border-radius: 18px;
+}
+
+#searchInput {
+  border: 2px solid #ccc;
+  outline: none;
+}
+
+#searchInput:focus {
+  outline: none;
+  box-shadow: none;
+  border-color: #e57a44;     /* le focus c'est aussi pour le clavier et le tab etc , faudrait que je l'utilise plus souvent */
+}
+
+
+/* Le logo de recherche  */
+.searchButton {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+/* Les logos de la premiere nav  */
+.logoFirstNav {
+  display: flex;
+  justify-content: space-between;
+  gap: 25%;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.logoFirstNav1 {
+  transition: all 0.3s ease-in-out;
+}
+.logoFirstNav2 {
+  transition: all 0.3s ease-in-out;
+}
+.logoFirstNav1:hover {
+  transform: scale(1.2);
+}
+.logoFirstNav2:hover {
+  transform: scale(1.2);
+}
+
+
+
 a {
     text-decoration: none;
     color: #2f2f2f;
 }
 
-#container-firstnavbar{
+.all_body {
     display: flex;
+}
+
+/* bordure du body */
+
+.border {
+    background-color: #2f2f2f;
+    padding: 2%;
+}
+
+/* contenu principal du body */
+
+.center{
+    flex:2;
+    display: flex;
+    flex-direction: column;
     justify-content: space-around;
 }
 
-#container-firstnavbar h1 {
-    flex: 1;
+/* titre de la page */
+
+.container_h2 {
+    display: flex;
+    align-items: center;
+    padding: 4%;
+    margin: 2%;
+    padding-inline: 30%;
+    background-color: #E57A44;
+    border-radius: 24px;
 }
 
-.firstnavbar {
-    flex: 2;
+/* première infos titre de l'annonce */
+
+.container_green {
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
+    padding: 2%;
+    margin: 2% 5%;
+    background-color: #d4e09b49;
+    border-radius: 24px;
 }
+
+.form {
+    size: 90%;
+}
+
+#titre_annonce {
+    border-radius: 24px;
+    padding: 0.5% ;
+    margin-top: 2%;
+    width: 100%;
+}
+
+/* description de l'annonce */
+
+.container_description {
+    display: flex;
+    flex-direction: column;
+    padding: 2%;
+    margin: 2% 5%;
+    border-radius: 24px;
+}
+
+#description_annonce {
+    width: 100%;
+    height: 300px;
+    border-radius: 24px;
+    padding: 0.5%;
+    margin-top: 2%;
+}
+
+/* choix de la catégorie */
+
+.container_category {
+    display: flex;
+    flex-direction: column;
+    margin: 2% 5%;
+    padding: 2%;
+}
+
+.allbutton_category {
+    display: flex;
+    justify-content:space-around ;
+    padding: 2% 15%;
+    flex-wrap: wrap;
+}
+
+/* boutton pour categorie */
+
+.button_category {
+    display: flex;
+    border-radius: 24px;
+    padding: 2% 2%;
+    margin: 0.5%;
+    background-color: #e57a44d8;
+    border: none;
+    width: 30%;
+}
+
+.button_category p {
+    color: #fafafa;
+}
+
+/* opacité du bouton choisi (ajouter opacité au click */
+
+.button_category:hover {
+    background-color: #e57a44;
+}
+
+
+/* infos secteurs */
+
+.container_green2 {
+    display: flex;
+    flex-direction: column;
+    padding: 2%;
+    margin: 2% 15%;
+    background-color: #d4e09b49;
+    border-radius: 24px;
+}
+
+#secteur {
+    border-radius: 24px;
+    padding: 0.5%;
+    margin-top: 2%;
+    width: 60%;
+}
+
+.publishbutton {
+    display: flex;
+    justify-content: flex-end;
+    padding: 5%;
+}
+
 
