@@ -242,4 +242,60 @@ a {
     padding: 5%;
 }
 
+/* Le footer  */
+
+footer {
+  background: #2f2f2f;
+  height: 65vh;
+  width: 100%;
+}
+
+.bigContainerFooter {
+  display: flex;
+  justify-content: center;
+  gap: 15%;
+  padding: 3% 0;
+}
+
+.bigContainerFooter h3 {
+  margin-bottom: 15%;
+  color: #fafafa;
+  font-weight: bold;
+}
+.bigContainerFooter li {
+  list-style: none;
+  line-height: 3;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.bigContainerFooter li:hover {
+  transform: scale(1.1);
+}
+
+.bigContainerFooter a {
+  text-decoration: none;
+  color: #fafafa;
+  transition: all 0.3s ease;
+}
+
+.bigContainerFooter a:hover {
+  color: #d4e09b;
+}
+
+
+/* Les logos et le copyright  */
+
+
+.logoAndCopyright {
+    display: flex;
+    justify-content: flex-end;
+    margin-top:3%;
+    gap: 17%;
+}
+.logos {
+    display: flex;
+    gap: 15%;
+    margin-right: 12vw;
+}
+
 
