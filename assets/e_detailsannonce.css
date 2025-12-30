@@ -6,6 +6,11 @@
     font-family: "Poppins", sans-serif;
 }
 
+a {
+  text-decoration: none;
+  color: #2f2f2f;
+}
+
 .nameSite {
   font-size: 4rem;
   font-weight: bold;
@@ -144,8 +149,12 @@
 }
 
 #photoprofil {
-  width: 80px;
-  border-radius: 400%;
+  width: 8%;
+  background-image: url(./images/emilie/profil/femmePhoto\ 3.svg) ;
+  border-radius: 100%;
+  background-size: 150%;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .title_score {
@@ -153,6 +162,10 @@
   flex-direction: column;
   padding: 2%;
   padding-inline: 2%;
+}
+
+.title_score h2 {
+  color: #fafafa;
 }
 
 /* annonce détaillée */
@@ -163,13 +176,7 @@
   padding: 4% 10%;
 }
 
-
 /* description annonce */
-
-#annonce {
-  display: flex;
-  justify-content: space-around;
-}
 
 #details_annonce {
   display: flex;
@@ -186,7 +193,7 @@
   border-radius: 24px;
 }
 
-#button_contact {
+.button_contact {
   align-self: center;
     display: flex;
     justify-content: center;
@@ -198,9 +205,19 @@
     width: 30%;
 }
 
+.button_contact:hover {
+    background-color: #e57a44;
+}
+
 /* conteneur demande de réservation */
 
 .reservation {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.reservation_date {
   display: flex;
   background-color: #2f2f2f;
   padding: 4%;
@@ -230,6 +247,120 @@
   width: 100%;
   background-color: #e57a44d8;
 }
+
+/* bouton pour envoyer une demande */
+
+.button_demande {
+  display: flex;
+  justify-content: center;
+  border-radius: 24px;
+  padding: 2% 2%;
+  margin: 4% 0;
+  background-color: #e57a44d8;
+  border: none;
+}
+
+
+/* responsive annonce détaillée */
+
+@media (max-width: 900px) {
+  #annonce {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 4% 10%;
+  }
+
+#info_reservation {
+  display: flex;
+  flex-direction: row;
+}
+
+.reservation_date {
+  display: flex;
+  flex-direction: column;
+}
+
+}
+
+/* les avis détaillés au sujet de l'utilisateur */
+
+#avis {
+  display: flex;
+  flex-direction: column;
+}
+
+.note_container-grey {
+  background-color: #2f2f2f;
+  border-radius: 24px;
+  padding: 3% ;
+}
+
+.note_textcontainer {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.note_textcontainer p {
+  padding: 0 2%;
+  color: #fafafa;
+}
+
+#etoiles {
+  width: 20%;
+  padding: 0 4%;
+}
+
+/* les filtres des avis */
+
+.container_grey_filter {
+ margin: 0 20%;
+}
+
+.avis_filter {
+  display: flex;
+margin: 2%;
+}
+
+.avis_filter_button {
+  display: flex;
+  justify-content: center;
+  border-radius: 24px;
+  padding: 0.5%;
+  margin: 0.5%;
+  background-color: #e57a44d8;
+  border: none;
+  width: 30%;
+}
+
+.avis_filter_button:hover {
+  background-color: #e57a44;
+}
+
+/* les 3 avis publiés */
+
+#avis_détails {
+  display: flex;
+  flex-direction: column;
+  margin: 2% 15%;
+}
+
+/* détails de chaque avis */
+
+.bulle_text_avis {
+  background-color: #2f2f2f75 ;
+  padding: 2%;
+  border-radius: 24px;
+  margin: 2% 0;
+}
+
+.titre_text_avis {
+  display: flex;
+  align-items: center;
+  gap: 2%;
+}
+
+
 
 
 
@@ -290,4 +421,39 @@ footer {
     display: flex;
     gap: 15%;
     margin-right: 12vw;
+}
+
+@media (max-width: 900px) {
+
+  h1 {
+    font-size: 1.25rem;
+  }
+
+  h2 {
+    font-size: 1rem;
+  }
+
+  h3 {
+    font-size: 0.875rem;
+  }
+
+  p {
+    font-size: 0.5rem;
+  }
+
+  input {
+    font-size: 0.5rem
+  }
+
+  button {
+    font-size: 0.5rem;
+  }
+
+  .allbutton_category {
+    padding: 2%;
+  }
+
+  .button_category {
+    max-height: 6%;
+  }
 }

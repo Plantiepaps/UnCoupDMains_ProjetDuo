@@ -1,15 +1,65 @@
-/* La premiere nav  */
 * {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-    font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
 }
 
-.nameSite {
+h1 {
   font-size: 4rem;
-  font-weight: bold;
+  font-weight: bolder;
+  color: #2f2f2f;
 }
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #2f2f2f;
+}
+
+h3 {
+  font-size: 1.25rem;
+  color: #2f2f2f;
+}
+
+p {
+  font-size: 1rem;
+}
+
+body {
+  background-color: #FAFAFA;
+}
+
+a {
+  text-decoration: none;
+  color: #2f2f2f;
+}
+
+@media (max-width: 900px) {
+
+  h1 {
+    font-size: 1.25rem;
+  }
+
+  h2 {
+    font-size: 1rem;
+  }
+
+  h3 {
+    font-size: 0.875rem;
+  }
+
+  p {
+    font-size: 0.5rem;
+  }
+
+  input {
+    font-size: 0.5rem
+  }
+}
+
+/* La premiere nav  */
+
 .firstNav {
   display: flex;
   justify-content: space-between;
@@ -133,6 +183,55 @@
   cursor: pointer;
   background: #d4e09b;
 }
+
+.all_body {
+  display: flex;
+}
+
+/* bordure du body */
+
+.border {
+  background-color: #2f2f2f;
+  padding: 2%;
+}
+
+/* contenu principal du body */
+
+.center {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+/* titre de la page */
+
+.container_h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4%;
+  margin: 2%;
+  padding-inline: 30%;
+  background-color: #E57A44;
+  border-radius: 24px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* Le footer  */
