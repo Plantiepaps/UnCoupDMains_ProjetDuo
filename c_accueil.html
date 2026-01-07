@@ -1,0 +1,1066 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Le titre du site  -->
+    <title>UnCoupD'Mains</title>
+
+    <!-- Le lien pour le CSS  -->
+    <link rel="stylesheet" href="c_accueil.css" />
+    <!-- La font Poppins  -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- La font playfair dispkay  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Domine:wght@400..700&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- La première barre de naviguation  -->
+    <nav class="firstNav">
+      <!-- Le menu toggle pour mobile -->
+
+      <div class="menuHamburger">
+        <svg
+          width="27"
+          height="19"
+          viewBox="0 0 27 19"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M1.5 9.5H25.5M1.5 1.5H25.5M1.5 17.5H25.5"
+            stroke="#1E1E1E"
+            stroke-width="3"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+      </div>
+
+      <!-- Le menu hamburger invisible  -->
+
+      <div class="menuHamburgerToggle" aria-label="menu hamburger">
+        <button class="subscribeButton">S'inscrire</button>
+        <div class="exitButton">X</div>
+        <h2>Se connecter</h2>
+        <p>Parcourir les services</p>
+        <p>Messages</p>
+        <p>Favoris</p>
+        <p>Top Prestataires</p>
+
+        <div class="separatorMenuToggle"></div>
+        <div class="categoriesMenuToggle">
+          <h2>Catégories</h2>
+          <ul>
+            <li>Babysitting</li>
+            <li>Aide ménagère</li>
+            <li>Aide à domicile</li>
+            <li>Développement informatique</li>
+            <li>Peinture extérieure</li>
+            <li>Professeur de langues</li>
+            <li>Coach sportif</li>
+            <li>Déménagement</li>
+            <li>Professeur de musique</li>
+            <li>Cours Instruments</li>
+            <li>Pet Sitter</li>
+            <li>Rénovation intérieure</li>
+            <li>Traducteur</li>
+            <li>Bénévolat</li>
+            <li>Electricité</li>
+            <li>Plomberie</li>
+          </ul>
+        </div>
+
+        <!-- Un séparateur pour le menu toggle sur mobile  -->
+        <div class="separatorMenuToggle"></div>
+
+        <p>Informations pratiques</p>
+        <p>Accueil</p>
+      </div>
+
+      <div class="logoLink">
+        <a href="c_accueil.html">
+          <h1 class="nameSite">UnCoupD'Mains</h1>
+        </a>
+      </div>
+
+      <div class="logoFirstNav">
+        <a href="/e_creationannonce.html">
+          <div class="ongletsFirstNav">
+            <p>Devenir Prestataire</p>
+          </div>
+        </a>
+
+        <!-- Message Logo  -->
+
+        <svg
+          class="logoFirstNav1"
+          width="50"
+          height="50"
+          viewBox="0 0 61 56"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M18 23.9167H34V20.5H18V23.9167ZM18 18.7917H42V15.375H18V18.7917ZM18 13.6667H42V10.25H18V13.6667ZM10 37.5833V6.83333C10 5.89375 10.3917 5.08941 11.175 4.42031C11.9583 3.75122 12.9 3.41667 14 3.41667H46C47.1 3.41667 48.0417 3.75122 48.825 4.42031C49.6083 5.08941 50 5.89375 50 6.83333V27.3333C50 28.2729 49.6083 29.0773 48.825 29.7464C48.0417 30.4155 47.1 30.75 46 30.75H18L10 37.5833ZM16.3 27.3333H46V6.83333H14V29.2552L16.3 27.3333Z"
+            fill="#2F2F2F"
+          />
+          <path
+            d="M8.832 45.304C9.344 45.304 9.8 45.412 10.2 45.628C10.6 45.836 10.916 46.152 11.148 46.576C11.38 47 11.496 47.516 11.496 48.124V52H10.416V48.28C10.416 47.624 10.252 47.124 9.924 46.78C9.604 46.428 9.168 46.252 8.616 46.252C8.048 46.252 7.596 46.436 7.26 46.804C6.924 47.164 6.756 47.688 6.756 48.376V52H5.676V48.28C5.676 47.624 5.512 47.124 5.184 46.78C4.864 46.428 4.428 46.252 3.876 46.252C3.308 46.252 2.856 46.436 2.52 46.804C2.184 47.164 2.016 47.688 2.016 48.376V52H0.924V45.424H2.016V46.372C2.232 46.028 2.52 45.764 2.88 45.58C3.248 45.396 3.652 45.304 4.092 45.304C4.644 45.304 5.132 45.428 5.556 45.676C5.98 45.924 6.296 46.288 6.504 46.768C6.688 46.304 6.992 45.944 7.416 45.688C7.84 45.432 8.312 45.304 8.832 45.304ZM19.0473 48.46C19.0473 48.668 19.0353 48.888 19.0113 49.12H13.7553C13.7953 49.768 14.0153 50.276 14.4153 50.644C14.8233 51.004 15.3153 51.184 15.8913 51.184C16.3633 51.184 16.7553 51.076 17.0673 50.86C17.3873 50.636 17.6113 50.34 17.7393 49.972H18.9153C18.7393 50.604 18.3873 51.12 17.8593 51.52C17.3313 51.912 16.6753 52.108 15.8913 52.108C15.2673 52.108 14.7073 51.968 14.2113 51.688C13.7233 51.408 13.3393 51.012 13.0593 50.5C12.7793 49.98 12.6393 49.38 12.6393 48.7C12.6393 48.02 12.7753 47.424 13.0473 46.912C13.3193 46.4 13.6993 46.008 14.1873 45.736C14.6833 45.456 15.2513 45.316 15.8913 45.316C16.5153 45.316 17.0673 45.452 17.5473 45.724C18.0273 45.996 18.3953 46.372 18.6513 46.852C18.9153 47.324 19.0473 47.86 19.0473 48.46ZM17.9193 48.232C17.9193 47.816 17.8273 47.46 17.6433 47.164C17.4593 46.86 17.2073 46.632 16.8873 46.48C16.5753 46.32 16.2273 46.24 15.8433 46.24C15.2913 46.24 14.8193 46.416 14.4273 46.768C14.0433 47.12 13.8233 47.608 13.7673 48.232H17.9193ZM22.5767 52.108C22.0727 52.108 21.6207 52.024 21.2207 51.856C20.8207 51.68 20.5047 51.44 20.2727 51.136C20.0407 50.824 19.9127 50.468 19.8887 50.068H21.0167C21.0487 50.396 21.2007 50.664 21.4727 50.872C21.7527 51.08 22.1167 51.184 22.5647 51.184C22.9807 51.184 23.3087 51.092 23.5487 50.908C23.7887 50.724 23.9087 50.492 23.9087 50.212C23.9087 49.924 23.7807 49.712 23.5247 49.576C23.2687 49.432 22.8727 49.292 22.3367 49.156C21.8487 49.028 21.4487 48.9 21.1367 48.772C20.8327 48.636 20.5687 48.44 20.3447 48.184C20.1287 47.92 20.0207 47.576 20.0207 47.152C20.0207 46.816 20.1207 46.508 20.3207 46.228C20.5207 45.948 20.8047 45.728 21.1727 45.568C21.5407 45.4 21.9607 45.316 22.4327 45.316C23.1607 45.316 23.7487 45.5 24.1967 45.868C24.6447 46.236 24.8847 46.74 24.9167 47.38H23.8247C23.8007 47.036 23.6607 46.76 23.4047 46.552C23.1567 46.344 22.8207 46.24 22.3967 46.24C22.0047 46.24 21.6927 46.324 21.4607 46.492C21.2287 46.66 21.1127 46.88 21.1127 47.152C21.1127 47.368 21.1807 47.548 21.3167 47.692C21.4607 47.828 21.6367 47.94 21.8447 48.028C22.0607 48.108 22.3567 48.2 22.7327 48.304C23.2047 48.432 23.5887 48.56 23.8847 48.688C24.1807 48.808 24.4327 48.992 24.6407 49.24C24.8567 49.488 24.9687 49.812 24.9767 50.212C24.9767 50.572 24.8767 50.896 24.6767 51.184C24.4767 51.472 24.1927 51.7 23.8247 51.868C23.4647 52.028 23.0487 52.108 22.5767 52.108ZM28.6062 52.108C28.1022 52.108 27.6502 52.024 27.2502 51.856C26.8502 51.68 26.5342 51.44 26.3022 51.136C26.0702 50.824 25.9422 50.468 25.9182 50.068H27.0462C27.0782 50.396 27.2302 50.664 27.5022 50.872C27.7822 51.08 28.1462 51.184 28.5942 51.184C29.0102 51.184 29.3382 51.092 29.5782 50.908C29.8182 50.724 29.9382 50.492 29.9382 50.212C29.9382 49.924 29.8102 49.712 29.5542 49.576C29.2982 49.432 28.9022 49.292 28.3662 49.156C27.8782 49.028 27.4782 48.9 27.1662 48.772C26.8622 48.636 26.5982 48.44 26.3742 48.184C26.1582 47.92 26.0502 47.576 26.0502 47.152C26.0502 46.816 26.1502 46.508 26.3502 46.228C26.5502 45.948 26.8342 45.728 27.2022 45.568C27.5702 45.4 27.9902 45.316 28.4622 45.316C29.1902 45.316 29.7782 45.5 30.2262 45.868C30.6742 46.236 30.9142 46.74 30.9462 47.38H29.8542C29.8302 47.036 29.6902 46.76 29.4342 46.552C29.1862 46.344 28.8502 46.24 28.4262 46.24C28.0342 46.24 27.7222 46.324 27.4902 46.492C27.2582 46.66 27.1422 46.88 27.1422 47.152C27.1422 47.368 27.2102 47.548 27.3462 47.692C27.4902 47.828 27.6662 47.94 27.8742 48.028C28.0902 48.108 28.3862 48.2 28.7622 48.304C29.2342 48.432 29.6182 48.56 29.9142 48.688C30.2102 48.808 30.4622 48.992 30.6702 49.24C30.8862 49.488 30.9982 49.812 31.0062 50.212C31.0062 50.572 30.9062 50.896 30.7062 51.184C30.5062 51.472 30.2222 51.7 29.8542 51.868C29.4942 52.028 29.0782 52.108 28.6062 52.108ZM31.8998 48.688C31.8998 48.016 32.0358 47.428 32.3078 46.924C32.5798 46.412 32.9518 46.016 33.4238 45.736C33.9038 45.456 34.4358 45.316 35.0198 45.316C35.5958 45.316 36.0958 45.44 36.5198 45.688C36.9438 45.936 37.2598 46.248 37.4678 46.624V45.424H38.5718V52H37.4678V50.776C37.2518 51.16 36.9278 51.48 36.4958 51.736C36.0718 51.984 35.5758 52.108 35.0078 52.108C34.4238 52.108 33.8958 51.964 33.4238 51.676C32.9518 51.388 32.5798 50.984 32.3078 50.464C32.0358 49.944 31.8998 49.352 31.8998 48.688ZM37.4678 48.7C37.4678 48.204 37.3678 47.772 37.1678 47.404C36.9678 47.036 36.6958 46.756 36.3518 46.564C36.0158 46.364 35.6438 46.264 35.2358 46.264C34.8278 46.264 34.4558 46.36 34.1198 46.552C33.7838 46.744 33.5158 47.024 33.3158 47.392C33.1158 47.76 33.0158 48.192 33.0158 48.688C33.0158 49.192 33.1158 49.632 33.3158 50.008C33.5158 50.376 33.7838 50.66 34.1198 50.86C34.4558 51.052 34.8278 51.148 35.2358 51.148C35.6438 51.148 36.0158 51.052 36.3518 50.86C36.6958 50.66 36.9678 50.376 37.1678 50.008C37.3678 49.632 37.4678 49.196 37.4678 48.7ZM42.8891 45.316C43.4571 45.316 43.9531 45.44 44.3771 45.688C44.8091 45.936 45.1291 46.248 45.3371 46.624V45.424H46.4411V52.144C46.4411 52.744 46.3131 53.276 46.0571 53.74C45.8011 54.212 45.4331 54.58 44.9531 54.844C44.4811 55.108 43.9291 55.24 43.2971 55.24C42.4331 55.24 41.7131 55.036 41.1371 54.628C40.5611 54.22 40.2211 53.664 40.1171 52.96H41.1971C41.3171 53.36 41.5651 53.68 41.9411 53.92C42.3171 54.168 42.7691 54.292 43.2971 54.292C43.8971 54.292 44.3851 54.104 44.7611 53.728C45.1451 53.352 45.3371 52.824 45.3371 52.144V50.764C45.1211 51.148 44.8011 51.468 44.3771 51.724C43.9531 51.98 43.4571 52.108 42.8891 52.108C42.3051 52.108 41.7731 51.964 41.2931 51.676C40.8211 51.388 40.4491 50.984 40.1771 50.464C39.9051 49.944 39.7691 49.352 39.7691 48.688C39.7691 48.016 39.9051 47.428 40.1771 46.924C40.4491 46.412 40.8211 46.016 41.2931 45.736C41.7731 45.456 42.3051 45.316 42.8891 45.316ZM45.3371 48.7C45.3371 48.204 45.2371 47.772 45.0371 47.404C44.8371 47.036 44.5651 46.756 44.2211 46.564C43.8851 46.364 43.5131 46.264 43.1051 46.264C42.6971 46.264 42.3251 46.36 41.9891 46.552C41.6531 46.744 41.3851 47.024 41.1851 47.392C40.9851 47.76 40.8851 48.192 40.8851 48.688C40.8851 49.192 40.9851 49.632 41.1851 50.008C41.3851 50.376 41.6531 50.66 41.9891 50.86C42.3251 51.052 42.6971 51.148 43.1051 51.148C43.5131 51.148 43.8851 51.052 44.2211 50.86C44.5651 50.66 44.8371 50.376 45.0371 50.008C45.2371 49.632 45.3371 49.196 45.3371 48.7ZM54.0465 48.46C54.0465 48.668 54.0345 48.888 54.0105 49.12H48.7545C48.7945 49.768 49.0145 50.276 49.4145 50.644C49.8225 51.004 50.3145 51.184 50.8905 51.184C51.3625 51.184 51.7545 51.076 52.0665 50.86C52.3865 50.636 52.6105 50.34 52.7385 49.972H53.9145C53.7385 50.604 53.3865 51.12 52.8585 51.52C52.3305 51.912 51.6745 52.108 50.8905 52.108C50.2665 52.108 49.7065 51.968 49.2105 51.688C48.7225 51.408 48.3385 51.012 48.0585 50.5C47.7785 49.98 47.6385 49.38 47.6385 48.7C47.6385 48.02 47.7745 47.424 48.0465 46.912C48.3185 46.4 48.6985 46.008 49.1865 45.736C49.6825 45.456 50.2505 45.316 50.8905 45.316C51.5145 45.316 52.0665 45.452 52.5465 45.724C53.0265 45.996 53.3945 46.372 53.6505 46.852C53.9145 47.324 54.0465 47.86 54.0465 48.46ZM52.9185 48.232C52.9185 47.816 52.8265 47.46 52.6425 47.164C52.4585 46.86 52.2065 46.632 51.8865 46.48C51.5745 46.32 51.2265 46.24 50.8425 46.24C50.2905 46.24 49.8185 46.416 49.4265 46.768C49.0425 47.12 48.8225 47.608 48.7665 48.232H52.9185ZM57.5759 52.108C57.0719 52.108 56.6199 52.024 56.2199 51.856C55.8199 51.68 55.5039 51.44 55.2719 51.136C55.0399 50.824 54.9119 50.468 54.8879 50.068H56.0159C56.0479 50.396 56.1999 50.664 56.4719 50.872C56.7519 51.08 57.1159 51.184 57.5639 51.184C57.9799 51.184 58.3079 51.092 58.5479 50.908C58.7879 50.724 58.9079 50.492 58.9079 50.212C58.9079 49.924 58.7799 49.712 58.5239 49.576C58.2679 49.432 57.8719 49.292 57.3359 49.156C56.8479 49.028 56.4479 48.9 56.1359 48.772C55.8319 48.636 55.5679 48.44 55.3439 48.184C55.1279 47.92 55.0199 47.576 55.0199 47.152C55.0199 46.816 55.1199 46.508 55.3199 46.228C55.5199 45.948 55.8039 45.728 56.1719 45.568C56.5399 45.4 56.9599 45.316 57.4319 45.316C58.1599 45.316 58.7479 45.5 59.1959 45.868C59.6439 46.236 59.8839 46.74 59.9159 47.38H58.8239C58.7999 47.036 58.6599 46.76 58.4039 46.552C58.1559 46.344 57.8199 46.24 57.3959 46.24C57.0039 46.24 56.6919 46.324 56.4599 46.492C56.2279 46.66 56.1119 46.88 56.1119 47.152C56.1119 47.368 56.1799 47.548 56.3159 47.692C56.4599 47.828 56.6359 47.94 56.8439 48.028C57.0599 48.108 57.3559 48.2 57.7319 48.304C58.2039 48.432 58.5879 48.56 58.8839 48.688C59.1799 48.808 59.4319 48.992 59.6399 49.24C59.8559 49.488 59.9679 49.812 59.9759 50.212C59.9759 50.572 59.8759 50.896 59.6759 51.184C59.4759 51.472 59.1919 51.7 58.8239 51.868C58.4639 52.028 58.0479 52.108 57.5759 52.108Z"
+            fill="black"
+          />
+        </svg>
+
+        <!-- Connexion Logo  -->
+        <svg
+          class="logoFirstNav2"
+          width="50"
+          height="50"
+          viewBox="0 0 62 52"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M0.516 46.7C0.516 46.02 0.652 45.428 0.924 44.924C1.196 44.412 1.572 44.016 2.052 43.736C2.54 43.456 3.096 43.316 3.72 43.316C4.528 43.316 5.192 43.512 5.712 43.904C6.24 44.296 6.588 44.84 6.756 45.536H5.58C5.468 45.136 5.248 44.82 4.92 44.588C4.6 44.356 4.2 44.24 3.72 44.24C3.096 44.24 2.592 44.456 2.208 44.888C1.824 45.312 1.632 45.916 1.632 46.7C1.632 47.492 1.824 48.104 2.208 48.536C2.592 48.968 3.096 49.184 3.72 49.184C4.2 49.184 4.6 49.072 4.92 48.848C5.24 48.624 5.46 48.304 5.58 47.888H6.756C6.58 48.56 6.228 49.1 5.7 49.508C5.172 49.908 4.512 50.108 3.72 50.108C3.096 50.108 2.54 49.968 2.052 49.688C1.572 49.408 1.196 49.012 0.924 48.5C0.652 47.988 0.516 47.388 0.516 46.7ZM11.0811 50.108C10.4651 50.108 9.90506 49.968 9.40106 49.688C8.90506 49.408 8.51306 49.012 8.22506 48.5C7.94506 47.98 7.80506 47.38 7.80506 46.7C7.80506 46.028 7.94906 45.436 8.23706 44.924C8.53306 44.404 8.93306 44.008 9.43706 43.736C9.94106 43.456 10.5051 43.316 11.1291 43.316C11.7531 43.316 12.3171 43.456 12.8211 43.736C13.3251 44.008 13.7211 44.4 14.0091 44.912C14.3051 45.424 14.4531 46.02 14.4531 46.7C14.4531 47.38 14.3011 47.98 13.9971 48.5C13.7011 49.012 13.2971 49.408 12.7851 49.688C12.2731 49.968 11.7051 50.108 11.0811 50.108ZM11.0811 49.148C11.4731 49.148 11.8411 49.056 12.1851 48.872C12.5291 48.688 12.8051 48.412 13.0131 48.044C13.2291 47.676 13.3371 47.228 13.3371 46.7C13.3371 46.172 13.2331 45.724 13.0251 45.356C12.8171 44.988 12.5451 44.716 12.2091 44.54C11.8731 44.356 11.5091 44.264 11.1171 44.264C10.7171 44.264 10.3491 44.356 10.0131 44.54C9.68506 44.716 9.42106 44.988 9.22106 45.356C9.02106 45.724 8.92106 46.172 8.92106 46.7C8.92106 47.236 9.01706 47.688 9.20906 48.056C9.40906 48.424 9.67306 48.7 10.0011 48.884C10.3291 49.06 10.6891 49.148 11.0811 49.148ZM19.0928 43.304C19.8928 43.304 20.5408 43.548 21.0368 44.036C21.5328 44.516 21.7808 45.212 21.7808 46.124V50H20.7008V46.28C20.7008 45.624 20.5368 45.124 20.2088 44.78C19.8808 44.428 19.4328 44.252 18.8648 44.252C18.2888 44.252 17.8288 44.432 17.4848 44.792C17.1488 45.152 16.9808 45.676 16.9808 46.364V50H15.8888V43.424H16.9808V44.36C17.1968 44.024 17.4888 43.764 17.8568 43.58C18.2328 43.396 18.6448 43.304 19.0928 43.304ZM26.7686 43.304C27.5686 43.304 28.2166 43.548 28.7126 44.036C29.2086 44.516 29.4566 45.212 29.4566 46.124V50H28.3766V46.28C28.3766 45.624 28.2126 45.124 27.8846 44.78C27.5566 44.428 27.1086 44.252 26.5406 44.252C25.9646 44.252 25.5046 44.432 25.1606 44.792C24.8246 45.152 24.6566 45.676 24.6566 46.364V50H23.5646V43.424H24.6566V44.36C24.8726 44.024 25.1646 43.764 25.5326 43.58C25.9086 43.396 26.3206 43.304 26.7686 43.304ZM37.2404 46.46C37.2404 46.668 37.2284 46.888 37.2044 47.12H31.9484C31.9884 47.768 32.2084 48.276 32.6084 48.644C33.0164 49.004 33.5084 49.184 34.0844 49.184C34.5564 49.184 34.9484 49.076 35.2604 48.86C35.5804 48.636 35.8044 48.34 35.9324 47.972H37.1084C36.9324 48.604 36.5804 49.12 36.0524 49.52C35.5244 49.912 34.8684 50.108 34.0844 50.108C33.4604 50.108 32.9004 49.968 32.4044 49.688C31.9164 49.408 31.5324 49.012 31.2524 48.5C30.9724 47.98 30.8324 47.38 30.8324 46.7C30.8324 46.02 30.9684 45.424 31.2404 44.912C31.5124 44.4 31.8924 44.008 32.3804 43.736C32.8764 43.456 33.4444 43.316 34.0844 43.316C34.7084 43.316 35.2604 43.452 35.7404 43.724C36.2204 43.996 36.5884 44.372 36.8444 44.852C37.1084 45.324 37.2404 45.86 37.2404 46.46ZM36.1124 46.232C36.1124 45.816 36.0204 45.46 35.8364 45.164C35.6524 44.86 35.4004 44.632 35.0804 44.48C34.7684 44.32 34.4204 44.24 34.0364 44.24C33.4844 44.24 33.0124 44.416 32.6204 44.768C32.2364 45.12 32.0164 45.608 31.9604 46.232H36.1124ZM42.1138 50L40.5538 47.552L39.0538 50H37.9138L40.0378 46.736L37.9138 43.424H39.1498L40.7098 45.86L42.1978 43.424H43.3378L41.2258 46.676L43.3498 50H42.1138ZM44.988 42.356C44.78 42.356 44.604 42.284 44.46 42.14C44.316 41.996 44.244 41.82 44.244 41.612C44.244 41.404 44.316 41.228 44.46 41.084C44.604 40.94 44.78 40.868 44.988 40.868C45.188 40.868 45.356 40.94 45.492 41.084C45.636 41.228 45.708 41.404 45.708 41.612C45.708 41.82 45.636 41.996 45.492 42.14C45.356 42.284 45.188 42.356 44.988 42.356ZM45.516 43.424V50H44.424V43.424H45.516ZM50.2451 50.108C49.6291 50.108 49.0691 49.968 48.5651 49.688C48.0691 49.408 47.6771 49.012 47.3891 48.5C47.1091 47.98 46.9691 47.38 46.9691 46.7C46.9691 46.028 47.1131 45.436 47.4011 44.924C47.6971 44.404 48.0971 44.008 48.6011 43.736C49.1051 43.456 49.6691 43.316 50.2931 43.316C50.9171 43.316 51.4811 43.456 51.9851 43.736C52.4891 44.008 52.8851 44.4 53.1731 44.912C53.4691 45.424 53.6171 46.02 53.6171 46.7C53.6171 47.38 53.4651 47.98 53.1611 48.5C52.8651 49.012 52.4611 49.408 51.9491 49.688C51.4371 49.968 50.8691 50.108 50.2451 50.108ZM50.2451 49.148C50.6371 49.148 51.0051 49.056 51.3491 48.872C51.6931 48.688 51.9691 48.412 52.1771 48.044C52.3931 47.676 52.5011 47.228 52.5011 46.7C52.5011 46.172 52.3971 45.724 52.1891 45.356C51.9811 44.988 51.7091 44.716 51.3731 44.54C51.0371 44.356 50.6731 44.264 50.2811 44.264C49.8811 44.264 49.5131 44.356 49.1771 44.54C48.8491 44.716 48.5851 44.988 48.3851 45.356C48.1851 45.724 48.0851 46.172 48.0851 46.7C48.0851 47.236 48.1811 47.688 48.3731 48.056C48.5731 48.424 48.8371 48.7 49.1651 48.884C49.4931 49.06 49.8531 49.148 50.2451 49.148ZM58.2569 43.304C59.0569 43.304 59.7049 43.548 60.2009 44.036C60.6969 44.516 60.9449 45.212 60.9449 46.124V50H59.8649V46.28C59.8649 45.624 59.7009 45.124 59.3729 44.78C59.0449 44.428 58.5969 44.252 58.0289 44.252C57.4529 44.252 56.9929 44.432 56.6489 44.792C56.3129 45.152 56.1449 45.676 56.1449 46.364V50H55.0529V43.424H56.1449V44.36C56.3609 44.024 56.6529 43.764 57.0209 43.58C57.3969 43.396 57.8089 43.304 58.2569 43.304Z"
+            fill="black"
+          />
+          <g clip-path="url(#clip0_21_1025)">
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M31 16C27.6752 16 24.9714 13.1296 24.9714 9.59998C24.9714 6.07038 27.6752 3.19998 31 3.19998C34.3248 3.19998 37.0286 6.07038 37.0286 9.59998C37.0286 13.1296 34.3248 16 31 16ZM36.6638 17.0767C39.0557 15.0335 40.4498 11.7295 39.9374 8.11189C39.342 3.91509 36.0535 0.556763 32.0836 0.067163C26.6052 -0.609637 21.9572 3.91838 21.9572 9.59998C21.9572 12.624 23.2774 15.3183 25.3362 17.0767C20.2782 19.0943 16.5857 23.832 16.007 30.2256C15.9226 31.1712 16.6174 32 17.5126 32C18.2797 32 18.9338 31.3856 19.0017 30.5744C19.606 23.4336 24.7559 19.2 31 19.2C37.2441 19.2 42.394 23.4336 42.9984 30.5744C43.0662 31.3856 43.7203 32 44.4874 32C45.3827 32 46.0774 31.1712 45.993 30.2256C45.4143 23.832 41.7218 19.0943 36.6638 17.0767Z"
+              fill="black"
+            />
+          </g>
+          <defs>
+            <clipPath id="clip0_21_1025">
+              <rect
+                width="30"
+                height="32"
+                fill="white"
+                transform="translate(16)"
+              />
+            </clipPath>
+          </defs>
+        </svg>
+      </div>
+    </nav>
+
+    <!-- La barre de separation  -->
+    <div class="separatorSecondNav"></div>
+
+    <!-- La seconde barre de nav  -->
+
+    <nav class="secondeNav">
+      <div class="lesCategories">
+        <ul class="grosOngletsEtSubMenu">
+          <!-- La premiere categories et ses sous categories  -->
+          <li>
+            <a href="#" class="bigCategories">Maison & Travaux</a>
+            <ul class="subMenu">
+              <li class="menuColumn">
+                <h4>Rénovation intérieure</h4>
+                <ul>
+                  <li><a href="filter.html">Peinture & finitions</a></li>
+                  <li><a href="filter.html">Revêtements de sol</a></li>
+                  <li><a href="filter.html">Pose de parquet</a></li>
+                  <li><a href="filter.html">Isolation</a></li>
+                </ul>
+              </li>
+
+              <li class="menuColumn">
+                <h4>Rénovation extérieure</h4>
+                <ul>
+                  <li><a href="filter.html">Façade</a></li>
+                  <li><a href="filter.html">Terrasse</a></li>
+                  <li><a href="filter.html">Toiture</a></li>
+                  <li><a href="filter.html">Clôtures</a></li>
+                </ul>
+              </li>
+
+              <li class="menuColumn">
+                <h4>Aménagement</h4>
+                <ul>
+                  <li><a href="#">Cuisine & salle de bain</a></li>
+                  <li><a href="#">Aménagement intérieur</a></li>
+                  <li><a href="#">Optimisation espaces</a></li>
+                  <li><a href="#">Petits travaux sur mesure</a></li>
+                </ul>
+              </li>
+
+              <li class="menuColumn">
+                <h4>Rénovation extérieure</h4>
+                <ul>
+                  <li><a href="#">Façade</a></li>
+                  <li><a href="#">Terrasse</a></li>
+                  <li><a href="#">Toiture</a></li>
+                  <li><a href="#">Clôtures</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+
+          <!-- La seconde categories et ses sous categories  -->
+
+          <li>
+            <a href="#" class="bigCategories">Jardin & Extérieur</a>
+            <ul class="subMenu">
+              <li class="menuColumn">
+                <h4>Entretien régulier</h4>
+                <ul>
+                  <li><a href="#">Tonte de pelouse</a></li>
+                  <li><a href="#">Taille de haies</a></li>
+                  <li><a href="#">Débroussaillage</a></li>
+                  <li><a href="#">Ramassage feuilles</a></li>
+                </ul>
+              </li>
+
+              <li class="menuColumn">
+                <h4>Aménagement extérieur</h4>
+                <ul>
+                  <li><a href="#">Plantation & potager</a></li>
+                  <li><a href="#">Arrosage automatique</a></li>
+                  <li><a href="#">Création massifs</a></li>
+                  <li><a href="#">Aménagement jardin</a></li>
+                </ul>
+              </li>
+
+              <li class="menuColumn">
+                <h4>Nettoyage extérieur</h4>
+                <ul>
+                  <li><a href="#">Nettoyage terrasse</a></li>
+                  <li><a href="#">Nettoyage allées</a></li>
+                  <li><a href="#">Évacuation déchets verts</a></li>
+                </ul>
+              </li>
+
+              <li class="menuColumn">
+                <h4>Rénovation extérieure</h4>
+                <ul>
+                  <li><a href="#">Façade</a></li>
+                  <li><a href="#">Terrasse</a></li>
+                  <li><a href="#">Toiture</a></li>
+                  <li><a href="#">Clôtures</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+
+          <!-- La troisieme categories et ses sous categories  -->
+          <li>
+            <a href="#" class="bigCategories">Dépannage & Bricolage</a>
+            <ul class="subMenu">
+              <li class="menuColumn">
+                <h4>Montage & installation</h4>
+                <ul>
+                  <li><a href="#">Montage de meubles</a></li>
+                  <li><a href="#">Fixation TV murale</a></li>
+                  <li><a href="#">Pose étagères</a></li>
+                  <li><a href="#">Tringles & rideaux</a></li>
+                </ul>
+              </li>
+
+              <li class="menuColumn">
+                <h4>Réparations courantes</h4>
+                <ul>
+                  <li><a href="#">Portes & serrures</a></li>
+                  <li><a href="#">Fenêtres & volets</a></li>
+                  <li><a href="#">Joints & fuites légères</a></li>
+                </ul>
+              </li>
+
+              <li class="menuColumn">
+                <h4>Petits travaux</h4>
+                <ul>
+                  <li><a href="#">Percement murs</a></li>
+                  <li><a href="#">Réglages domestiques</a></li>
+                  <li><a href="#">Réparations diverses</a></li>
+                </ul>
+              </li>
+
+              <li class="menuColumn">
+                <h4>Rénovation extérieure</h4>
+                <ul>
+                  <li><a href="#">Façade</a></li>
+                  <li><a href="#">Terrasse</a></li>
+                  <li><a href="#">Toiture</a></li>
+                  <li><a href="#">Clôtures</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <!-- La quatrieme categories et ses sous categories  -->
+          <li>
+            <a href="#" class="bigCategories">Services à domicile</a>
+            <ul class="subMenu">
+              <li class="menuColumn">
+                <h4>Ménage & entretien</h4>
+                <ul>
+                  <li><a href="#">Ménage régulier</a></li>
+                  <li><a href="#">Ménage ponctuel</a></li>
+                  <li><a href="#">Grand nettoyage</a></li>
+                  <li><a href="#">Nettoyage après travaux</a></li>
+                </ul>
+              </li>
+
+              <li class="menuColumn">
+                <h4>Aide quotidienne</h4>
+                <ul>
+                  <li><a href="#">Repassage</a></li>
+                  <li><a href="#">Organisation maison</a></li>
+                  <li><a href="#">Aide ponctuelle</a></li>
+                </ul>
+              </li>
+
+              <li class="menuColumn">
+                <h4>Aménagement</h4>
+                <ul>
+                  <li><a href="#">Cuisine & salle de bain</a></li>
+                  <li><a href="#">Aménagement intérieur</a></li>
+                  <li><a href="#">Optimisation espaces</a></li>
+                  <li><a href="#">Petits travaux sur mesure</a></li>
+                </ul>
+              </li>
+
+              <li class="menuColumn">
+                <h4>Rénovation extérieure</h4>
+                <ul>
+                  <li><a href="#">Façade</a></li>
+                  <li><a href="#">Terrasse</a></li>
+                  <li><a href="#">Toiture</a></li>
+                  <li><a href="#">Clôtures</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <!-- La cinquième categories et ses sous categories  -->
+          <li>
+            <a href="#" class="bigCategories">Famille & Accompagnement</a>
+            <ul class="subMenu">
+              <li class="menuColumn">
+                <h4>Enfants</h4>
+                <ul>
+                  <li>
+                    <a href="/filter.html?category=babysitting">Babysitting</a>
+                  </li>
+                  <li>
+                    <a href="/filter.html?category=garde-periscolaire"
+                      >Garde périscolaire</a
+                    >
+                  </li>
+                  <li>
+                    <a href="/filter.html?category=sorties-ecole"
+                      >Sorties d'école</a
+                    >
+                  </li>
+                  <li>
+                    <a href="/filter.html?category=aide-devoirs"
+                      >Aide aux devoirs</a
+                    >
+                  </li>
+                </ul>
+              </li>
+
+              <li class="menuColumn">
+                <h4>Seniors</h4>
+                <ul>
+                  <li><a href="#">Compagnie à domicile</a></li>
+                  <li><a href="#">Accompagnements sorties</a></li>
+                  <li><a href="#">Aides aux courses</a></li>
+                  <li><a href="#">Aide administrative</a></li>
+                  <li><a href="#">Assistance numérique</a></li>
+                </ul>
+              </li>
+
+              <li class="menuColumn">
+                <h4>Aménagement</h4>
+                <ul>
+                  <li><a href="#">Cuisine & salle de bain</a></li>
+                  <li><a href="#">Aménagement intérieur</a></li>
+                  <li><a href="#">Optimisation espaces</a></li>
+                  <li><a href="#">Petits travaux sur mesure</a></li>
+                </ul>
+              </li>
+
+              <li class="menuColumn">
+                <h4>Rénovation extérieure</h4>
+                <ul>
+                  <li><a href="#">Façade</a></li>
+                  <li><a href="#">Terrasse</a></li>
+                  <li><a href="#">Toiture</a></li>
+                  <li><a href="#">Clôtures</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <!-- La sixième categories et ses sous categories  -->
+          <li>
+            <a href="#" class="bigCategories">Animaux</a>
+            <ul class="subMenu">
+              <li class="menuColumn">
+                <h4>Garde & visites</h4>
+                <ul>
+                  <li><a href="#">Garde chiens</a></li>
+                  <li><a href="#">Garde chats</a></li>
+                  <li><a href="#">Visites à domicile</a></li>
+                </ul>
+              </li>
+
+              <li class="menuColumn">
+                <h4>Promenades & soins</h4>
+                <ul>
+                  <li><a href="#">Promenade de chiens</a></li>
+                  <li><a href="#">Nourrissage</a></li>
+                  <li><a href="#">Soins basiques</a></li>
+                </ul>
+              </li>
+
+              <li class="menuColumn">
+                <h4>Aménagement</h4>
+                <ul>
+                  <li><a href="#">Cuisine & salle de bain</a></li>
+                  <li><a href="#">Aménagement intérieur</a></li>
+                  <li><a href="#">Optimisation espaces</a></li>
+                  <li><a href="#">Petits travaux sur mesure</a></li>
+                </ul>
+              </li>
+
+              <li class="menuColumn">
+                <h4>Rénovation extérieure</h4>
+                <ul>
+                  <li><a href="#">Façade</a></li>
+                  <li><a href="#">Terrasse</a></li>
+                  <li><a href="#">Toiture</a></li>
+                  <li><a href="#">Clôtures</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <!-- La septième categories et ses sous categories  -->
+          <li>
+            <a href="#" class="bigCategories">Numérique & Création</a>
+            <ul class="subMenu">
+              <li class="menuColumn">
+                <h4>Informatique</h4>
+                <ul>
+                  <li><a href="filter.html">Dépannage PC/Mac</a></li>
+                  <li><a href="#">Installation logiciels</a></li>
+                  <li><a href="#">Sécurité & virus</a></li>
+                  <li><a href="#">Assistance à distance</a></li>
+                </ul>
+              </li>
+
+              <li class="menuColumn">
+                <h4>Web & développement</h4>
+                <ul>
+                  <li><a href="#">Création de sites</a></li>
+                  <li>
+                    <a href="/filter.html?category=developpementWeb"
+                      >Développement web</a
+                    >
+                  </li>
+                  <li><a href="#">Maintenance</a></li>
+                  <li><a href="#">Optimisation</a></li>
+                </ul>
+              </li>
+
+              <li class="menuColumn">
+                <h4>Design & médias</h4>
+                <ul>
+                  <li><a href="#">UX / UI design</a></li>
+                  <li><a href="#">Graphisme</a></li>
+                  <li><a href="#">Montage vidéo</a></li>
+                  <li><a href="#">Animation 2D/3D</a></li>
+                </ul>
+              </li>
+
+              <li class="menuColumn">
+                <h4>Rénovation extérieure</h4>
+                <ul>
+                  <li><a href="#">Façade</a></li>
+                  <li><a href="#">Terrasse</a></li>
+                  <li><a href="#">Toiture</a></li>
+                  <li><a href="#">Clôtures</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+
+          <!-- La huitieme categories et ses sous categories  -->
+          <li>
+            <a href="#" class="bigCategories">Santé & Bien-être </a>
+            <ul class="subMenu">
+              <li class="menuColumn">
+                <h4>Informatique</h4>
+                <ul>
+                  <li><a href="#">Dépannage PC/Mac</a></li>
+                  <li><a href="#">Installation logiciels</a></li>
+                  <li><a href="#">Sécurité & virus</a></li>
+                  <li><a href="#">Assistance à distance</a></li>
+                </ul>
+              </li>
+
+              <li class="menuColumn">
+                <h4>Web & développement</h4>
+                <ul>
+                  <li><a href="#">Création de sites</a></li>
+                  <li>
+                    <a href="/filter.html?category=developpementWeb"
+                      >Développement web</a
+                    >
+                  </li>
+                  <li><a href="#">Maintenance</a></li>
+                  <li><a href="#">Optimisation</a></li>
+                </ul>
+              </li>
+
+              <li class="menuColumn">
+                <h4>Design & médias</h4>
+                <ul>
+                  <li><a href="#">UX / UI design</a></li>
+                  <li><a href="#">Graphisme</a></li>
+                  <li><a href="#">Montage vidéo</a></li>
+                  <li><a href="#">Animation 2D/3D</a></li>
+                </ul>
+              </li>
+
+              <li class="menuColumn">
+                <h4>Rénovation extérieure</h4>
+                <ul>
+                  <li><a href="#">Façade</a></li>
+                  <li><a href="#">Terrasse</a></li>
+                  <li><a href="#">Toiture</a></li>
+                  <li><a href="#">Clôtures</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+
+          <!-- La neuviemecategories et ses sous categories  -->
+          <li>
+            <a href="#" class="bigCategories">Santé & Bien-être </a>
+            <ul class="subMenu">
+              <li class="menuColumn">
+                <h4>Informatique</h4>
+                <ul>
+                  <li><a href="#">Dépannage PC/Mac</a></li>
+                  <li><a href="#">Installation logiciels</a></li>
+                  <li><a href="#">Sécurité & virus</a></li>
+                  <li><a href="#">Assistance à distance</a></li>
+                </ul>
+              </li>
+
+              <li class="menuColumn">
+                <h4>Web & développement</h4>
+                <ul>
+                  <li><a href="#">Création de sites</a></li>
+                  <li>
+                    <a href="/filter.html?category=developpementWeb"
+                      >Développement web</a
+                    >
+                  </li>
+                  <li><a href="#">Maintenance</a></li>
+                  <li><a href="#">Optimisation</a></li>
+                </ul>
+              </li>
+
+              <li class="menuColumn">
+                <h4>Design & médias</h4>
+                <ul>
+                  <li><a href="#">UX / UI design</a></li>
+                  <li><a href="#">Graphisme</a></li>
+                  <li><a href="#">Montage vidéo</a></li>
+                  <li><a href="#">Animation 2D/3D</a></li>
+                </ul>
+              </li>
+
+              <li class="menuColumn">
+                <h4>Rénovation extérieure</h4>
+                <ul>
+                  <li><a href="#">Façade</a></li>
+                  <li><a href="#">Terrasse</a></li>
+                  <li><a href="#">Toiture</a></li>
+                  <li><a href="#">Clôtures</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+
+          <!-- J'ai mis ca pour pousser la nav pour qu'on voit tout les onglets -->
+        </ul>
+      </div>
+
+      <div class="arrowRight">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="white"
+          viewBox="0 0 24 24"
+          stroke-width="3"
+          stroke="black"
+          width="20"
+          height="20"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"
+          />
+        </svg>
+      </div>
+    </nav>
+
+    <!-- La seconde barre de nav  -->
+
+    <!-- Pour le mobile  -->
+
+    <!-- La section recherché  -->
+
+    <section class="searchSection">
+      <p>Trouvez le service qui corresponds à vos besoins</p>
+
+      <!-- Le "formulaire pour la recherche"  -->
+      <form id="searchFormMobile">
+        <div class="searchWrapper">
+          <input
+            type="search"
+            id="searchInputMobile"
+            name="search"
+            placeholder="Rechercher un prestataire..."
+          />
+
+          <button type="submit" class="searchButton" aria-label="Rechercher">
+            <svg
+              width="14"
+              height="14"
+              viewBox="0 0 14 14"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M12.8 12.8L9.90005 9.9M11.4667 6.13333C11.4667 9.07885 9.0789 11.4667 6.13338 11.4667C3.18786 11.4667 0.800049 9.07885 0.800049 6.13333C0.800049 3.18781 3.18786 0.799999 6.13338 0.799999C9.0789 0.799999 11.4667 3.18781 11.4667 6.13333Z"
+                stroke="#1E1E1E"
+                stroke-width="1.6"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </button>
+        </div>
+      </form>
+
+      <!-- Le bouton rechercher  -->
+
+      <button class="rechercherButton">Rechercher</button>
+    </section>
+
+    <h2 class="nosServicesMobile">Nos services</h2>
+
+    <section class="serviceSection">
+      <div class="serviceGrid">
+        <div class="div div1">
+          <img src="/assets/img/aideMenagers.jpg" alt="aidemenagers" />
+          <span>Ménage</span>
+        </div>
+        <div class="div div2">
+          <img src="/assets/img/devWeb.avif" alt="devWeb" />
+          <span>Developpeur</span>
+        </div>
+        <div class="div div3">
+          <img src="/assets/img/déménageur.jpeg" alt="déménageur" />
+          <span>Déménagement</span>
+        </div>
+        <div class="div div4">
+          <img src="/assets/img/coursDeMusique.jpeg" alt="coursdemusique" />
+          <span>Musique</span>
+        </div>
+        <div class="div div5">
+          <img src="/assets/img/aide au repas.jpg" alt="aideaurepas" />
+          <span>Aide au repas</span>
+        </div>
+        <div class="div div6">
+          <img src="/assets/img/babysitting.jpg" alt="babysitting" />
+          <span>Babysitting</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pour le mobile  -->
+
+    <!-- La hero section  -->
+
+    <section class="heroSection">
+      <div class="heroContent">
+        <h2 class="heroTitle">
+          Trouvez le <span class="serviceHeroTitle">service</span> qui vous
+          correspond
+        </h2>
+
+        <!-- Barre de recherche -->
+        <form class="heroSearchForm">
+          <div class="searchContainer">
+            <!-- Input de recherche -->
+            <div class="searchInputWrapper">
+              <svg
+                class="searchIcon"
+                width="20"
+                height="20"
+                viewBox="0 0 14 14"
+                fill="none"
+              >
+                <path
+                  d="M12.8 12.8L9.9 9.9M11.4667 6.1333C11.4667 9.0788 9.0789 11.4667 6.1334 11.4667C3.1879 11.4667 0.8 9.0788 0.8 6.1333C0.8 3.1878 3.1879 0.8 6.1334 0.8C9.0789 0.8 11.4667 3.1878 11.4667 6.1333Z"
+                  stroke="currentColor"
+                  stroke-width="1.6"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+              <input
+                type="search"
+                id="mainSearch"
+                name="service"
+                placeholder="Quel service recherchez-vous ?"
+                class="searchInput"
+              />
+            </div>
+
+            <!-- Bouton de recherche -->
+            <button type="submit" class="searchSubmitButton">Rechercher</button>
+          </div>
+        </form>
+
+        <p class="heroSubtitle">
+          Besoin <span>D'unCoupD'Mains ? </span>Des profils certifiés près de
+          chez vous, prêts à vous aider
+        </p>
+
+        <!-- Points de réassurance -->
+        <div class="heroFeatures">
+          <div class="feature">
+            <svg
+              class="featureIcon"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+            </svg>
+            <span>Profils vérifiés</span>
+          </div>
+
+          <div class="feature">
+            <svg
+              class="featureIcon"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <circle cx="12" cy="12" r="10" />
+              <polyline points="12 6 12 12 16 14" />
+            </svg>
+            <span>Assistance 24/7</span>
+          </div>
+
+          <div class="feature">
+            <svg
+              class="featureIcon"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <rect x="3" y="11" width="18" height="11" rx="2" ry="2" />
+              <path d="M7 11V7a5 5 0 0 1 10 0v4" />
+            </svg>
+            <span>Paiement sécurisé</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- La hero section  -->
+
+    <!-- Explication section -->
+
+    <section class="explicationPaiement">
+      <h2>Payez autrement !</h2>
+      <div class="textHero">
+        <p>
+          Sur notre plateforme, les services ne sont pas obligatoirement
+          payants.
+        </p>
+        <p>
+          Vous pouvez payer un prestataire en argent, en échange de services, ou
+          combiner les deux.
+        </p>
+      </div>
+
+      <div class="imgHero">
+        <img
+          class="imgJardinier"
+          src="/assets/img/jardinierLogo.png"
+          alt="Jardinier"
+        />
+        <span class="textJardinier">"Je m'occupe de ton jardin"</span>
+        <img
+          class="imgPeintre"
+          src="/assets//img/peintreLogo 1.png"
+          alt="Peintre"
+        />
+        <span class="textPeintre">"Je repeins ta cuisine"</span>
+      </div>
+    </section>
+
+    <!-- Explication section  -->
+
+    <!-- La section pour le mobile  -->
+
+    <h2 class="lesDeuxBoxTitle">Les services les plus demandés</h2>
+    <div class="lesDeuxBox">
+      <!-- La premiere box  -->
+      <div class="divService">
+        <img src="/assets/img/devWeb.avif" alt="developpeurInformatique" />
+        <span>Developpeur</span>
+      </div>
+
+      <!-- La seconde box  -->
+      <div class="divService">
+        <img src="/assets/img/coursDeMusique.jpeg" alt="coursdemusique" />
+        <span>Musique</span>
+      </div>
+    </div>
+
+    <!-- La section pour le mobile  -->
+
+    <section class="cardsSubscribeContainer">
+      <div class="titleAndText">
+        <h2>Carte Avantages Services</h2>
+        <ul>
+          <li>Essentielle</li>
+          <li>Premium</li>
+          <li>Professionnelle</li>
+        </ul>
+      </div>
+
+      <!-- La carte Essentielle -->
+      <div class="boxSubsCards">
+        <h3>Carte Essentielle</h3>
+        <p>50€/mois</p>
+        <ul>
+          <li>Accès au servivces de base</li>
+          <li>Jusqu'a 5 interventions par mois</li>
+          <li>Services ponctuels rapides</li>
+          <li>Idéal pour tester la plateforme</li>
+        </ul>
+
+        <button class="boxSubsButton">Choisir cette carte</button>
+      </div>
+      <!-- La carte premium  -->
+
+      <div class="boxSubsCardsPremium">
+        <h3>Carte Premium</h3>
+        <p>99€/mois</p>
+        <ul>
+          <li>Accès a tous les services</li>
+          <li>Jusqu'a 15 interventions par mois</li>
+          <li>Priorités sur les demandes</li>
+          <li>Services échangeables inclus</li>
+          <li>La plus populaire</li>
+        </ul>
+
+        <button class="boxSubsButtonPremium">Choisir cette carte</button>
+      </div>
+      <!-- la carte pro  -->
+
+      <div class="boxSubsCardsPro">
+        <h3>Carte Professionnelle</h3>
+        <p>299€/mois</p>
+        <ul>
+          <li>Priorité maximale</li>
+          <li>Services illimités</li>
+          <li>Reservation rapide</li>
+          <li>
+            Services échangeables <br />
+            et payant inclus
+          </li>
+          <li>Parfait pour usage intensif</li>
+        </ul>
+
+        <button class="boxSubsButtonPro">Choisir cette carte</button>
+      </div>
+    </section>
+
+    <!-- La section carte avantages Services Web -->
+
+    <section class="cardsContainer">
+      <h2 class="containerTitle">Carte Avantages Services</h2>
+      <ul class="firstUl">
+        <li>Essentielle</li>
+        <li>Premium</li>
+        <li>Professionnelle</li>
+      </ul>
+
+      <div class="cardsBoxContainer">
+        <div class="cards">
+          <img src="/assets/img/pricingCard.png" alt="carteEssentielle" />
+          <button class="button">Choisir cette carte</button>
+        </div>
+        <div class="cards">
+          <img src="/assets/img/pricingCardPremium.png" alt="cartePremium" />
+          <button class="button premium">Choisir cette carte</button>
+        </div>
+        <div class="cards">
+          <img
+            src="/assets/img/pricingCardPro.png"
+            alt="carteProfessionnelle"
+          />
+          <button class="button">Choisir cette carte</button>
+        </div>
+      </div>
+
+      <div class="textContainer">
+        <p>
+          Avec la Carte Services, vous pouvez bénéficier de plusieurs services
+          chaque mois, sans payer chaque prestation individuellement. Les
+          services sont accessibles selon :
+        </p>
+        <ul>
+          <li>la disponibilité</li>
+          <li>des prestataires</li>
+          <li>un usage équitable</li>
+          <li>des plafonds par type de service</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Le séparateur  -->
+
+    <div class="separator"></div>
+    <!-- La section avis des clients  -->
+
+    <div class="serviceTitle">
+      <h2>Les avis de nos clients</h2>
+    </div>
+    <div class="reviewContainer">
+      <div class="reviewCards">
+        <img src="/assets/img/reviewCard1.png" alt="review1" />
+        <img src="/assets/img/reviewCard2.png" alt="review2" />
+        <img src="assets/img/reviewCard3.png" alt="review3" />
+      </div>
+    </div>
+
+    <div class="separator2"></div>
+
+    <!-- Le bouton pour rejoindre la communauté  -->
+
+    <div class="containerService">
+      <div class="serviceTitleDecouvrir"></div>
+      <h2>Rejoignez la communauté et trouvez ou proposez un service</h2>
+      <a href="c_servicePage.html" class="decouvrirButton"
+        >Découvrir les services</a
+      >
+    </div>
+
+    <!-- Le footer  -->
+
+    <footer>
+      <div class="bigContainerFooter">
+        <!-- first part  -->
+        <div class="containerFooter">
+          <h3>A propos</h3>
+          <ul>
+            <li><a href="#">Qui sommes-nous</a></li>
+            <li><a href="#">A propos de nous</a></li>
+            <li><a href="#">Notre histoire</a></li>
+            <li><a href="#">La plateforme</a></li>
+            <li><a href="#">Nos valeurs</a></li>
+          </ul>
+        </div>
+
+        <!-- second part  -->
+        <div class="containerFooter">
+          <h3>Informations légales</h3>
+          <ul>
+            <li><a href="#">Mentions légales</a></li>
+            <li><a href="#">CGU/CGV</a></li>
+            <li><a href="#">Confidentialité & données</a></li>
+            <li><a href="#">Conditions générales</a></li>
+          </ul>
+        </div>
+
+        <!-- third part  -->
+        <div class="containerFooter">
+          <h3>Contact/Aide</h3>
+          <ul>
+            <li><a href="#">Nous contacter</a></li>
+            <li><a href="#">Support/Assistance</a></li>
+            <li><a href="#">Ecrire au support</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Aide & Support</a></li>
+          </ul>
+        </div>
+        <!-- fourth part  -->
+        <div class="containerFooter">
+          <h3>Service et Cartes</h3>
+          <ul>
+            <li><a href="#">Carte Essentielle</a></li>
+            <li><a href="#">Carte Premium</a></li>
+            <li><a href="#">Carte Pro</a></li>
+            <li><a href="#">Découvrir tous les services</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="separatorFooter"></div>
+
+      <div class="logoAndCopyright">
+        <div class="logo">
+          <img src="/assets/img/Copyright Site.png" alt="copyrightSite" />
+        </div>
+
+        <div class="logos">
+          <a href="#">
+            <img src="/assets/img/fb icon.png" alt="fbIcon" />
+          </a>
+          <a href="#">
+            <img src="/assets/img/twitter icon.png" alt="twitterIcon" />
+          </a>
+          <a href="#">
+            <img src="/assets/img/instagram icon.png" alt="instagramIcon" />
+          </a>
+          <a href="#">
+            <img src="/assets/img/tiktok icon.png" alt="tiktokIcon" />
+          </a>
+          <a href="#">
+            <img src="/assets/img/youtube icon.png" alt=youtubebIcon">
+          </a>
+          <a href="#">
+            <img src="/assets/img/whatsapp icon.png" alt="whatsappIcon" />
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Le footer  -->
+    <script src="c_accueil.js"></script>
+  </body>
+</html>

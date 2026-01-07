@@ -1,0 +1,693 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #fafafa;
+}
+/* La premiere nav  */
+.logoLink a {
+  text-decoration: none;
+}
+
+.nameSite {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #1f2933;
+}
+
+.firstNav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5% 5%;
+}
+
+.ongletsFirstNav {
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+}
+
+/* Les logos de la premiere nav  */
+
+.logoFirstNav {
+  display: flex;
+  justify-content: space-between;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  gap: 3rem;
+}
+
+.logoFirstNav a {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  transition: color 0.3s ease-in-out;
+  color: #2f2f2f;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.logoFirstNav a:hover {
+  color: #e57a44;
+}
+
+.logoFirstNav1 {
+  transition: all 0.3s ease-in-out;
+}
+
+.logoFirstNav2 {
+  transition: all 0.3s ease-in-out;
+}
+
+.logoFirstNav1:hover {
+  transform: scale(1.1);
+}
+
+.logoFirstNav2:hover {
+  transform: scale(1.1);
+}
+
+/* La separation  */
+
+.separatorSecondNav {
+  height: 2px;
+  background-color: #2f2f2f;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.2),
+    inset 0 -2px 4px rgba(255, 255, 255, 0.3);
+  border-radius: 2px;
+}
+
+/* La first nav  */
+
+/* La seconde nav  */
+
+.secondeNav {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.bigCategories {
+  position: relative;
+  font-size: 0.95rem;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.bigCategories::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 100%;
+  height: 2px;
+  background: #e57a44;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.25s ease;
+}
+
+.grosOngletsEtSubMenu > li:hover > .bigCategories::after {
+  transform: scaleX(1);
+}
+
+.lesCategories {
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+
+.lesCategories::-webkit-scrollbar {
+  display: none;
+}
+
+.grosOngletsEtSubMenu {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+  height: auto;
+  width: max-content;
+  background: #d4e09b;
+  padding: 1rem 2%;
+}
+
+.grosOngletsEtSubMenu li {
+  list-style: none;
+  cursor: pointer;
+}
+
+.grosOngletsEtSubMenu a {
+  text-decoration: none;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #2f2f2f;
+}
+
+.arrowRight {
+  position: absolute;
+  top: 30%;
+  right: 0;
+  width: 3%;
+  background: #d4e09b;
+  cursor: pointer;
+  z-index: 20;
+}
+
+/* Le subMenu  */
+
+.subMenu {
+  position: absolute;
+  display: flex;
+  justify-content: space-around;
+  gap: 6rem;
+  padding: 3% 5%;
+  top: 100%;
+  left: 0;
+  background: #2f2f2f;
+  list-style: none;
+  width: 100%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 20;
+  height: auto;
+  max-height: 60vh;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.25s ease, transform 0.25s ease;
+}
+
+.subMenu a {
+  color: #ddd;
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.6;
+  padding: 0.4rem 0;
+  display: block;
+}
+
+.subMenu.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.menuColumn h4 {
+  font-size: 0.95rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #d4e09b;
+}
+
+.menuColumn a {
+  color: #ddd;
+  background: transparent;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.menuColumn a:hover {
+  color: #d4e09b;
+  background: rgba(74, 124, 89, 0.2);
+}
+/* La seconde nav  */
+
+/* Hero Section */
+.heroSection {
+  background: #2f2f2ff8;
+  padding: 6vh 5%;
+  text-align: center;
+  margin-top: 2%;
+  width: 90%;
+  margin-left: 5%;
+  border-radius: 8px;
+}
+
+.heroContent {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.heroTitle {
+  font-family: "Playfair Display", serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  font-optical-sizing: auto;
+  font-style: normal;
+  color: #fafafa;
+  margin-bottom: 2rem;
+  line-height: 1.2;
+}
+
+.serviceHeroTitle {
+  color: #d4e09b;
+}
+
+/* Barre de recherche */
+.heroSearchForm {
+  margin-bottom: 2rem;
+}
+
+.searchContainer {
+  background: white;
+  border-radius: 8px;
+  display: flex;
+  align-items: stretch;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  max-width: 650px;
+  margin: 0 auto 2rem;
+  overflow: hidden;
+}
+
+/* Input de recherche */
+.searchInputWrapper {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1rem 1.5rem;
+  border-right: 1px solid #e4e5e7;
+}
+
+.searchIcon {
+  color: #62646a;
+  flex-shrink: 0;
+}
+
+.searchInput {
+  border: none;
+  outline: none;
+  font-size: 0.95rem;
+  width: 100%;
+  color: #1e1e1e;
+}
+
+.searchInput::placeholder {
+  color: #95979d;
+}
+
+/* Bouton de recherche */
+.searchSubmitButton {
+  background: #e57a44;
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+  white-space: nowrap;
+}
+
+.searchSubmitButton:hover {
+  background: #d4652f;
+  box-shadow: 0 4px 8px rgba(229, 122, 68, 0.3);
+}
+
+.heroSubtitle {
+  font-family: "Playfair Display", serif;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #fafafa;
+  margin-bottom: 2rem;
+}
+
+.heroSubtitle span {
+  color: #d4e09b;
+}
+
+.heroFeatures {
+  display: flex;
+  justify-content: center;
+  gap: 2.5rem;
+  flex-wrap: wrap;
+  padding: 0 2rem;
+}
+
+.feature {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #fafafa;
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+}
+
+.featureIcon {
+  width: 22px;
+  height: 22px;
+  stroke: #d4e09b;
+}
+
+/* La seconde nav  */
+
+/* Le caroussel les plus demandés  */
+
+.carouselSection {
+  max-width: 90%;
+  padding: 0 20px;
+  margin: 3% 5%;
+  position: relative;
+}
+
+.sectionHeader {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.sectionTitle {
+  font-size: () 2rem;
+  font-weight: 700;
+  color: #2f2f2f;
+}
+
+.carouselCcontainer {
+  position: relative;
+  overflow: hidden;
+}
+
+.carouselButtonLeft {
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 50%;
+  background-color: #d4e09b;
+  color: #2f2f2f;
+  font-size: 1.25rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  z-index: 2;
+}
+.carouselButtonRight {
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 50%;
+  background-color: #d4e09b;
+  color: #2f2f2f;
+  font-size: 1.25rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: absolute;
+  right: 0;
+  top: 50%;
+}
+.carouselTrack {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  transition: transform 0.4s ease-in-out;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+.carouselTrack::-webkit-scrollbar {
+  display: none;
+}
+.serviceCardLink {
+  text-decoration: none;
+  display: inline-block;
+  color: inherit;
+  margin: 10px 0;
+}
+
+.serviceCard {
+  min-width: 300px;
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.serviceCard:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 24px rgba(229, 122, 68, 0.15);
+}
+
+.cardImage {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 60px;
+  position: relative;
+  overflow: hidden;
+}
+.cardImage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.cardBadge {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background-color: #e57a44;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.cardContent {
+  padding: 20px;
+}
+
+.cardTitle {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #2f2f2f;
+  margin-bottom: 10px;
+}
+
+.cardDescription {
+  font-size: 0.8rem;
+  color: #666;
+  line-height: 1.5;
+  margin-bottom: 15px;
+  height: 42px;
+  overflow: hidden;
+}
+
+.cardFooter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 15px;
+  border-top: 1px solid #f0f0f0;
+}
+
+.cardPrice {
+  font-size: 24px;
+  font-weight: 700;
+  color: #e57a44;
+}
+
+.cardPrice span {
+  font-size: 0.8rem;
+  color: #999;
+  font-weight: 400;
+}
+
+.cardRating {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.stars {
+  color: #e57a44;
+  font-size: 1rem;
+}
+
+.ratingNumber {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #2f2f2f;
+}
+
+.ratingCount {
+  font-size: 0.75rem;
+  color: #999;
+}
+
+/* Le caroussel les plus demandés  */
+
+/* Le separtor  */
+.separatorDeviensPrestataire {
+  border: 2px solid #d4e09b;
+  margin-top: 4%;
+}
+/* Le separtor  */
+/* Le container pour devenir prestataire */
+
+.containerService {
+  background: #d4e09b;
+  height: 30vh;
+  width: 80%;
+  max-width: 1400px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 3% auto;
+  gap: 10%;
+}
+
+.containerService h2 {
+  font-size: 1.75rem;
+  font-weight: 600;
+  color: #2f2f2f;
+  text-align: center;
+  margin: 0;
+}
+
+.devenezPretataireButton {
+  background: #e57a44;
+  border: none;
+  border-radius: 8px;
+  width: 25%;
+  min-width: 280px;
+  height: 10%;
+  min-height: 60px;
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.2s ease;
+}
+
+.devenezPretataireButton:hover {
+  background: #d16a38;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(229, 122, 68, 0.3);
+}
+
+/* Le container pour devenir prestataire  */
+
+/* Le footer  */
+
+footer {
+  background: #2f2f2f;
+  padding: 4rem 0 2rem;
+  width: 100%;
+  margin-top: 3%;
+}
+
+.bigContainerFooter {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 3rem;
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  border-bottom: 1px solid #404040;
+  padding-bottom: 4rem;
+}
+
+.bigContainerFooter h3 {
+  margin-bottom: 1.5rem;
+  color: #fafafa;
+  font-weight: 600;
+  font-size: 1.15rem;
+}
+
+.bigContainerFooter li {
+  list-style: none;
+  margin-bottom: 0.75rem;
+  transition: transform 0.2s ease;
+  cursor: pointer;
+}
+
+.bigContainerFooter li:hover {
+  transform: translateX(4px);
+}
+
+.bigContainerFooter a {
+  text-decoration: none;
+  color: #d1d5db;
+  font-size: 0.9375rem;
+  transition: color 0.2s ease;
+}
+
+.bigContainerFooter a:hover {
+  color: #d4e09b;
+}
+
+/* Les logos et le copyright  */
+
+.logoAndCopyright {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+  padding: 1rem;
+  gap: 1rem;
+}
+
+.logos {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.logos a {
+  transition: opacity 0.2s ease;
+}
+
+.logos a:hover {
+  opacity: 0.7;
+}
+/* Le footer  */
+
+/* Responsive */
+@media (max-width: 768px) {
+  .containerService {
+    width: 90%;
+    height: 35vh;
+  }
+
+  .containerService h2 {
+    font-size: 1.5rem;
+  }
+
+  .devenezPretataireButton {
+    width: 70%;
+    font-size: 1rem;
+  }
+
+  /* Le footer  */
+  .bigContainerFooter {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+
+  .logoAndCopyright {
+    flex-direction: column;
+    gap: 1.5rem;
+    text-align: center;
+  }
+}

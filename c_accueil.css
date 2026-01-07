@@ -1,0 +1,1246 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #f1f2f0db;
+}
+/* La premiere nav  */
+.logoLink a {
+  text-decoration: none;
+}
+
+.nameSite {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #1f2933;
+}
+
+.firstNav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5% 5%;
+}
+
+.ongletsFirstNav {
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+}
+
+/* Les logos de la premiere nav  */
+
+.logoFirstNav {
+  display: flex;
+  justify-content: space-between;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  gap: 3rem;
+}
+
+.logoFirstNav a {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  transition: color 0.3s ease-in-out;
+  color: #2f2f2f;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.logoFirstNav a:hover {
+  color: #e57a44;
+}
+
+.logoFirstNav1 {
+  transition: all 0.3s ease-in-out;
+}
+
+.logoFirstNav2 {
+  transition: all 0.3s ease-in-out;
+}
+
+.logoFirstNav1:hover {
+  transform: scale(1.1);
+}
+
+.logoFirstNav2:hover {
+  transform: scale(1.1);
+}
+
+/* La separation  */
+
+.separatorSecondNav {
+  height: 2px;
+  background-color: #2f2f2f;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.2),
+    inset 0 -2px 4px rgba(255, 255, 255, 0.3);
+  border-radius: 2px;
+}
+
+/* La first nav  */
+
+/* La seconde nav  */
+
+.secondeNav {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.bigCategories {
+  position: relative;
+  font-size: 0.95rem;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.bigCategories::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 100%;
+  height: 2px;
+  background: #e57a44;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.25s ease;
+}
+
+.grosOngletsEtSubMenu > li:hover > .bigCategories::after {
+  transform: scaleX(1);
+}
+
+.lesCategories {
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+
+.lesCategories::-webkit-scrollbar {
+  display: none;
+}
+
+.grosOngletsEtSubMenu {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+  height: auto;
+  width: max-content;
+  background: #d4e09b;
+  padding: 1rem 2%;
+}
+
+.grosOngletsEtSubMenu li {
+  list-style: none;
+  cursor: pointer;
+}
+
+.grosOngletsEtSubMenu a {
+  text-decoration: none;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #2f2f2f;
+}
+
+.arrowRight {
+  position: absolute;
+  top: 30%;
+  right: 0;
+  width: 3%;
+  background: #d4e09b;
+  cursor: pointer;
+  z-index: 20;
+}
+
+/* Le subMenu  */
+
+.subMenu {
+  position: absolute;
+  display: flex;
+  justify-content: space-around;
+  gap: 6rem;
+  padding: 3% 5%;
+  top: 100%;
+  left: 0;
+  background: #2f2f2f;
+  list-style: none;
+  width: 100%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 20;
+  height: auto;
+  max-height: 60vh;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.25s ease, transform 0.25s ease;
+}
+
+.subMenu a {
+  color: #ddd;
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.6;
+  padding: 0.4rem 0;
+  display: block;
+}
+
+.subMenu.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.menuColumn h4 {
+  font-size: 0.95rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #d4e09b;
+}
+
+.menuColumn a {
+  color: #ddd;
+  background: transparent;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.menuColumn a:hover {
+  color: #d4e09b;
+  background: rgba(74, 124, 89, 0.2);
+}
+/* La seconde nav  */
+
+/* Hero Section */
+.heroSection {
+  background: #2f2f2ff8;
+  padding: 6vh 5%;
+  text-align: center;
+  margin-top: 2%;
+  width: 90%;
+  margin-left: 5%;
+  border-radius: 8px;
+}
+
+.heroContent {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.heroTitle {
+  font-family: "Playfair Display", serif;
+  font-size: 2rem;
+  font-weight: 700;
+  font-optical-sizing: auto;
+  font-style: normal;
+  color: #fafafa;
+  margin-bottom: 2rem;
+  line-height: 1.2;
+}
+
+.serviceHeroTitle {
+  color: #d4e09b;
+}
+
+/* Barre de recherche */
+.heroSearchForm {
+  margin-bottom: 2rem;
+}
+
+.searchContainer {
+  background: white;
+  border-radius: 8px;
+  display: flex;
+  align-items: stretch;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  max-width: 650px;
+  margin: 0 auto 2rem;
+  overflow: hidden;
+}
+
+/* Input de recherche */
+.searchInputWrapper {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1rem 1.5rem;
+  border-right: 1px solid #e4e5e7;
+}
+
+.searchIcon {
+  color: #62646a;
+  flex-shrink: 0;
+}
+
+.searchInput {
+  border: none;
+  outline: none;
+  font-size: 0.95rem;
+  width: 100%;
+  color: #1e1e1e;
+}
+
+.searchInput::placeholder {
+  color: #95979d;
+}
+
+/* Bouton de recherche */
+.searchSubmitButton {
+  background: #e57a44;
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+  white-space: nowrap;
+}
+
+.searchSubmitButton:hover {
+  background: #d4652f;
+  box-shadow: 0 4px 8px rgba(229, 122, 68, 0.3);
+}
+
+.heroSubtitle {
+  font-family: "Playfair Display", serif;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #fafafa;
+  margin-bottom: 2rem;
+}
+
+.heroSubtitle span {
+  color: #d4e09b;
+}
+
+.heroFeatures {
+  display: flex;
+  justify-content: center;
+  gap: 2.5rem;
+  flex-wrap: wrap;
+  padding: 0 2rem;
+}
+
+.feature {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #fafafa;
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+}
+
+.featureIcon {
+  width: 22px;
+  height: 22px;
+  stroke: #d4e09b;
+}
+
+/* La hero section */
+
+/* Explication paiement section  */
+
+.explicationPaiement {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  padding: 6vh 5%;
+  margin-top: 2%;
+  background: #d4e09b;
+  height: 60vh;
+  width: 90%;
+  margin-left: 5%;
+  gap: 3%;
+  border-radius: 8px;
+}
+
+.explicationPaiement h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #2f2f2f;
+  text-align: center;
+  margin: 0;
+}
+
+.imgPeintre {
+  position: absolute;
+  right: 4%;
+  bottom: 7%;
+}
+
+.imgJardinier {
+  position: absolute;
+  left: 4%;
+  bottom: 7%;
+}
+
+.imgHero img {
+  width: 20%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.textJardinier {
+  position: absolute;
+  left: 27%;
+  top: 65%;
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+.textPeintre {
+  position: absolute;
+  top: 65%;
+  right: 27%;
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+/* Explication paiement section  */
+
+/* La section carte avantages services  */
+
+.cardsContainer {
+  background: #e57a44;
+  width: 90%;
+  margin-left: 5%;
+  margin-top: 2%;
+  border-radius: 8px;
+  position: relative;
+  padding: 6vh 5%;
+}
+
+.containerTitle {
+  display: flex;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 2rem;
+  margin-bottom: 3%;
+  color: #2f2f2f;
+}
+
+.firstUl {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin-top: 2%;
+  gap: 5%;
+  color: #fafafa;
+  font-size: 0.95rem;
+}
+
+.cardsBoxContainer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 4%;
+  gap: 4%;
+  flex-wrap: wrap;
+}
+
+.cards {
+  position: relative;
+  flex: 1;
+  min-width: 300px;
+  max-width: 380px;
+}
+
+.cards img {
+  height: auto;
+  width: 100%;
+  border-radius: 8px;
+}
+
+.button {
+  position: absolute;
+  bottom: 8%;
+  left: 20%;
+  border: none;
+  border-radius: 8px;
+  width: 60%;
+  height: 12%;
+  min-height: 50px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #fafafa;
+  background: #2f2f2f;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.button:hover,
+.premium:hover {
+  transform: translateY(-4px);
+  background: #e57a44;
+  color: #2f2f2f;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+.premium {
+  background: #fafafa;
+  color: #2f2f2f;
+  transition: all 0.2s ease;
+}
+
+.textContainer {
+  padding: 5%;
+  color: #fafafa;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+/* Les separateur  */
+
+.separator,
+.separator2 {
+  border: 2px solid #d4e09b;
+  margin-top: 4%;
+  width: 90%;
+  margin-left: 5%;
+}
+
+/* La section review  */
+
+.serviceTitle {
+  display: flex;
+  justify-content: center;
+  margin-top: 4%;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.reviewContainer {
+  margin-left: 5%;
+  padding: 6vh 5%;
+  width: 90%;
+}
+
+.reviewCards {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 4%;
+  margin-top: 4%;
+  flex-wrap: wrap;
+}
+
+.reviewCards img {
+  width: 100%;
+  max-width: 340px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Le container pour devenir prestataire */
+
+.containerService {
+  background: #d4e09b;
+  height: 30vh;
+  width: 80%;
+  max-width: 1400px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 3% auto;
+  gap: 10%;
+}
+
+.serviceTitleDecouvrir {
+  font-size: 1.75rem;
+  font-weight: 600;
+  color: #2f2f2f;
+  text-align: center;
+  margin: 0;
+}
+
+.decouvrirButton {
+  background: #e57a44;
+  border: none;
+  border-radius: 8px;
+  width: 25%;
+  min-width: 280px;
+  height: 10%;
+  min-height: 60px;
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.2s ease;
+}
+
+.decouvrirButton:hover {
+  background: #d16a38;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(229, 122, 68, 0.3);
+}
+
+/* Le container pour devenir prestataire  */
+
+/* Le footer  */
+
+footer {
+  background: #2f2f2f;
+  padding: 4rem 0 2rem;
+  width: 100%;
+  margin-top: 3%;
+}
+
+.bigContainerFooter {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 3rem;
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  border-bottom: 1px solid #404040;
+  padding-bottom: 4rem;
+}
+
+.bigContainerFooter h3 {
+  margin-bottom: 1.5rem;
+  color: #fafafa;
+  font-weight: 600;
+  font-size: 1.15rem;
+}
+
+.bigContainerFooter li {
+  list-style: none;
+  margin-bottom: 0.75rem;
+  transition: transform 0.2s ease;
+  cursor: pointer;
+}
+
+.bigContainerFooter li:hover {
+  transform: translateX(4px);
+}
+
+.bigContainerFooter a {
+  text-decoration: none;
+  color: #d1d5db;
+  font-size: 0.9375rem;
+  transition: color 0.2s ease;
+}
+
+.bigContainerFooter a:hover {
+  color: #d4e09b;
+}
+
+/* Les logos et le copyright  */
+
+.logoAndCopyright {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+  padding: 1rem;
+  gap: 1rem;
+}
+
+.logos {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.logos a {
+  transition: opacity 0.2s ease;
+}
+
+.logos a:hover {
+  opacity: 0.7;
+}
+/* Le footer  */
+
+/* ce qui est invisible pour le web  */
+.menuHamburger {
+  display: none;
+}
+.searchSection {
+  display: none;
+}
+.serviceSection {
+  display: none;
+}
+.nosServicesMobile {
+  display: none;
+}
+#searchFormMobile {
+  display: none;
+}
+
+.lesDeuxBoxTitle {
+  display: none;
+}
+.lesDeuxBox {
+  display: none;
+}
+
+.cardsSubscribeContainer {
+  display: none;
+}
+
+.menuHamburgerToggle {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  /* Tout ce qui est invisible pour le mobile  */
+
+  #searchForm {
+    display: none;
+  }
+
+  .logoFirstNav1 {
+    display: none;
+  }
+  .secondeNav {
+    display: none;
+  }
+
+  .carouselContainer {
+    display: none;
+  }
+  .hero {
+    display: none;
+  }
+
+  .cardsContainer {
+    display: none;
+  }
+
+  .firstNav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.25rem;
+    gap: 29%;
+    border-bottom: solid;
+  }
+  .nameSite {
+    font-size: 1.25rem;
+  }
+
+  .menuHamburger {
+    display: block;
+    cursor: pointer;
+  }
+
+  /* Le mnu Hamburger qui est invisible  en bas */
+  .menuHamburgerToggle {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    background: #fafafa;
+    height: 100vh;
+    z-index: 10;
+    background: #d4e09b;
+    color: black;
+    line-height: 1.8;
+    font-weight: 500;
+    transition: all 0.4s ease-in-out;
+    transform: translateX(-100%);
+    opacity: 0;
+    visibility: hidden;
+  }
+  .menuHamburgerToggle.active {
+    opacity: 1;
+    transform: translateX(0);
+    visibility: visible;
+  }
+
+  .menuHamburgerToggle li,
+  .menuHamburgerToggle p {
+    list-style: none;
+    padding-left: 3%;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+    font-size: 0.9rem;
+  }
+
+  .menuHamburgerToggle li:hover,
+  .menuHamburgerToggle p:hover {
+    color: #e57a44;
+    transform: translateX(3%);
+  }
+
+  .separatorMenuToggle {
+    border: #e57a44 solid 1px;
+  }
+
+  .subscribeButton {
+    background: #e57a44;
+    border: none;
+    border-radius: 10px;
+    margin: 3% 20%;
+    width: 150px;
+    height: 41px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+
+  .subscribeButton:hover {
+    transform: translateY(15%);
+    background: #2f2f2f;
+    color: #fafafa;
+  }
+
+  .exitButton {
+    color: #e57a44;
+    font-size: 2rem;
+    position: absolute;
+    right: 20px;
+    top: 0;
+    cursor: pointer;
+  }
+
+  /* Le menu Hamburger sur mobile au dessus , qui est invisible sur web*/
+
+  #searchFormMobile {
+    display: block;
+  }
+
+  .searchWrapper {
+    position: relative;
+    width: 300px;
+    margin-top: 5%;
+  }
+
+  .searchWrapper input {
+    width: 100%;
+    padding: 3% 3%;
+    border-radius: 18px;
+  }
+  .searchSection {
+    background: #d4e09b;
+    width: 90%;
+    padding: 5%;
+    margin: 3% 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 10px;
+  }
+
+  #searchInput,
+  #searchInputMobile {
+    border: 2px solid #ccc;
+    outline: none;
+  }
+
+  #searchInput:focus,
+  #searchInputMobile:focus {
+    outline: none;
+    box-shadow: none;
+    border-color: #e57a44; /* Le focus c'est pour l'acessibilité , tabs etc */
+  }
+
+  .searchButton {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+
+  .rechercherButton {
+    background: #e57a44;
+    border: none;
+    border-radius: 24px;
+    width: 170px;
+    height: 41px;
+    font-size: 1.25rem;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 5%;
+    transition: all 0.3s ease;
+  }
+
+  .rechercherButton:hover {
+    transform: translateY(15%);
+    background: #2f2f2f;
+    color: #fafafa;
+  }
+
+  .nosServicesMobile {
+    font-size: 1.25rem;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+  }
+
+  /* La service section  */
+
+  .serviceSection {
+    display: block;
+  }
+
+  .serviceGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 8px;
+    background: #2f2f2f;
+    padding: 3%;
+  }
+
+  .div {
+    white-space: nowrap;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3%;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+  }
+
+  .div:hover {
+    transform: scale(1.1);
+  }
+
+  .div img {
+    width: 114px;
+    height: 76px;
+    border-radius: 20px;
+  }
+  .div span {
+    font-size: 1rem;
+    color: #fafafa;
+  }
+
+  .divService {
+    position: relative;
+    width: 230px;
+    height: 170px;
+  }
+
+  .divService::after {
+    content: ""; /* ce qui permet de créer quelque chose  , sans cette ligne , ca fera rien*/
+    position: absolute;
+    inset: 0;
+    border-radius: 10px;
+    background: linear-gradient(
+      /* C'est linéaire du bas vers le haut , en mettant du sombre   sombre en bas pour que le texte est visible en gros et celui du bas cest le top et du coup transparant*/
+        to top,
+      rgba(0, 0, 0, 0.65),
+      /* c'est utile pour les cards, effet sympa que je peux réutiliser*/
+        rgba(0, 0, 0, 0)
+    );
+  }
+  .divService img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+  }
+
+  .divService span {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fafafa;
+    text-shadow: 0 2px 4px #2f2f2f;
+    z-index: 10;
+  }
+
+  .lesDeuxBoxTitle {
+    display: block;
+  }
+  .lesDeuxBox {
+    display: flex;
+    justify-content: center;
+    gap: 6%;
+    margin-top: 7%;
+  }
+
+  .cardsSubscribeContainer {
+    height: 170vh;
+    width: 100%;
+    background: #e57a44;
+    margin-top: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 2;
+    gap: 2%;
+  }
+
+  .titleAndText ul {
+    display: flex;
+    justify-content: center;
+    gap: 10%;
+    color: #fafafa;
+    list-style: none;
+  }
+
+  .boxSubsCards {
+    background: #fafafa;
+    width: 328px;
+    height: 388px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+  }
+
+  .boxSubsButton {
+    border: none;
+    border-radius: 8px;
+    width: 153px;
+    height: 56px;
+    color: #fafafa;
+    background: #2f2f2f;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .boxSubsCardsPremium {
+    background: #2f2f2f;
+    color: #fafafa;
+    width: 328px;
+    height: 388px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+  }
+
+  .boxSubsButtonPremium {
+    border: none;
+    border-radius: 8px;
+    width: 153px;
+    height: 56px;
+    color: #2f2f2f;
+    background: #fafafa;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .boxSubsCardsPro {
+    background: #d4e09b;
+    width: 328px;
+    height: 388px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+  }
+
+  .boxSubsButtonPro {
+    border: none;
+    border-radius: 8px;
+    width: 153px;
+    height: 56px;
+    color: #fafafa;
+    background: #2f2f2f;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .boxSubsButton:hover,
+  .boxSubsButtonPremium:hover,
+  .boxSubsButtonPro:hover {
+    transform: scale(1.1);
+    background: #e57a44;
+    color: #2f2f2f;
+  }
+
+  /* La review section  */
+  .reviewContainer {
+    margin-top: 5%;
+    padding: 3%;
+    width: 70%;
+    height: auto;
+    margin-left: 15%;
+  }
+
+  .reviewContainer h2 {
+    display: flex;
+    justify-content: center;
+  }
+
+  .reviewContainer img {
+    width: 100%;
+    height: 100%;
+    margin-top: 7%;
+  }
+
+  .reviewCards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5%;
+    margin-top: 4%;
+  }
+
+  /* Le container service  */
+
+  .containerService {
+    background: #d4e09b;
+    height: 25vh;
+    width: 80%;
+    margin-left: 10%;
+    border-radius: 18px;
+    margin-top: 4%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6%;
+  }
+
+  .containerService h2 {
+    font-size: 1rem;
+    padding: 3%;
+  }
+
+  .containerService button {
+    background: #e57a44;
+    border: none;
+    border-radius: 24px;
+    width: 300px;
+    height: 51px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+
+  .containerService button:hover {
+    transform: translateY(10%);
+    background: #e57a44d4;
+  }
+
+  /* Le footer  */
+
+  .bigContainerFooter {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15%;
+    width: 100%;
+    height: auto;
+    margin-top: 5%;
+    padding: 3% 0;
+  }
+
+  .bigContainerFooter h3 {
+    margin-bottom: 7%;
+    color: #fafafa;
+    font-weight: bold;
+    font-size: 1rem;
+  }
+  .bigContainerFooter li {
+    list-style: none;
+    line-height: 2;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    font-size: 0.8rem;
+  }
+  .bigContainerFooter li:hover {
+    transform: scale(1.1);
+  }
+
+  .bigContainerFooter a {
+    text-decoration: none;
+    color: #fafafa;
+    transition: all 0.3s ease;
+  }
+
+  .bigContainerFooter a:hover {
+    color: #d4e09b;
+  }
+
+  .containerFooter {
+    margin-top: 20px;
+  }
+
+  .separatorFooter {
+    border: solid 0.2px #fafafa;
+  }
+
+  .nameSiteFooter {
+    margin-top: 5%;
+    color: #fafafa;
+    display: flex;
+    justify-content: center;
+  }
+  /* Les logos et le copyright  */
+
+  .logoAndCopyright {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 3%;
+  }
+
+  .logo {
+    font-size: 0.8rem;
+  }
+  .logos {
+    display: flex;
+    align-items: center;
+    gap: 10%;
+    margin-top: 2%;
+  }
+  .logos img {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .explicationPaiement h2,
+  .containerTitle,
+  .serviceTitle {
+    font-size: 1.5rem;
+  }
+
+  .textJardinier,
+  .textPeintre,
+  .firstUl,
+  .textContainer,
+  .button {
+    font-size: 0.875rem;
+  }
+
+  .cardsBoxContainer,
+  .reviewCards {
+    gap: 3%;
+  }
+}
