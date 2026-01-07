@@ -395,6 +395,8 @@ a {
   padding: 0% 10%;
 }
 
+
+
 /* description annonce */
 
 #details_annonce {
@@ -405,23 +407,40 @@ a {
 
 #container_description {
   display: flex;
-  flex-direction: column;
   justify-content: space-around;
   background-color: #d4e09b49;
   padding: 4%;
   border-radius: 24px;
 }
 
+#container_description p {
+  padding: 0 4%;
+}
+
+#img_description {
+  width: 30%;
+}
+
+#img_description img {
+  width: 100%;
+  border-radius: 24%;
+}
+
+#container_button_contact {
+  display: flex;
+  justify-content: space-around;
+  padding: 5% 0;
+
+}
+
 .button_contact {
   align-self: center;
   display: flex;
-  justify-content: center;
   border-radius: 24px;
-  padding: 2% 2%;
-  margin: 4% 0;
+  padding: 20% 100% ;
   background-color: #e57a44d8;
   border: none;
-  width: 30%;
+  cursor: pointer;
 }
 
 .button_contact:hover {
@@ -480,6 +499,7 @@ a {
   margin: 4% 0;
   background-color: #e57a44d8;
   border: none;
+  cursor: pointer;
 }
 
 .button_demande:hover {
@@ -536,6 +556,7 @@ a {
   background-color: #e57a44d8;
   border: none;
   width: 30%;
+  cursor: pointer;
 }
 
 .avis_filter_button:hover {
@@ -655,7 +676,7 @@ footer {
 
 /* responsive */
 
-@media (max-width: 900px) {
+@media (max-width: 600px) {
   h1 {
     font-size: 1.25rem;
   }
@@ -696,8 +717,13 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    padding: 4% 10%;
+    padding: 4% 2%;
   }
+
+  #img_description {
+  align-self: center;
+  width: 70%;
+}
 
   #info_reservation {
     display: flex;

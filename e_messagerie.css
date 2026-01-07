@@ -436,6 +436,7 @@ a {
   background-color: #2f2f2f98;
   color: #fafafa;
   padding: 4%;
+  cursor: pointer;
 }
 
 #contact {
@@ -553,6 +554,7 @@ a {
   background-color: #e57a44a1;
   border: none;
   width: 15%;
+  cursor: pointer;
 }
 
 .sendbutton:hover {
@@ -566,7 +568,6 @@ footer {
   background: #2f2f2f;
   padding: 4rem 0 2rem;
   width: 100%;
-  margin-top: 3%;
 }
 
 .bigContainerFooter {
