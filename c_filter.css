@@ -378,8 +378,8 @@ body {
 }
 
 .buttonArrow:hover {
-  background: #4a7c59;
-  color: white;
+  background: #b8c670;
+  color: #2f2f2f;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
@@ -740,16 +740,15 @@ body {
   background: #fff;
   cursor: pointer;
 }
+.navButton:hover,
+.pageButton:hover {
+  background: #e57a44b9;
+}
 
 .pageButton.active {
   background: #111827;
   color: #fff;
   border-color: #111827;
-}
-
-.navButton:hover,
-.pageButton:hover {
-  background: #e57a44b9;
 }
 
 .leftArrow,
